@@ -1,0 +1,8 @@
+<% layout('./boilerplate/boilerplate') %> 
+<body>
+    <% for (let i of blog){ %>
+        <ul>
+            <a href="/blog/<%= i.id %>"><%= i.title %> </a>
+        </ul> 
+    <% } %> 
+</body>

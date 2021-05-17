@@ -1,0 +1,8 @@
+<% layout('./boilerplate/boilerplate') %> 
+<body>
+    <form action="/blog/<%= blog.id %>?_method=PUT" method="post">
+        <label for="blog">Blog description</label>
+        <input type="text" name="content" id="blog[des]" value="<%= blog.content %> ">
+        <button type="submit">Add</button>
+    </form>
+</body>
